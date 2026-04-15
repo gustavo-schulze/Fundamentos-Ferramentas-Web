@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+font-family: Arial, sans-serif;  
+background-color: white;
+text-align: center;        
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+.produto  {
+  list-style: none;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.promocao {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
