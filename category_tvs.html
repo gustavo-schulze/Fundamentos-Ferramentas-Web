@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Categorias de Televisores</title>
+  <title>Categoria de TVs</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,6 +16,7 @@
 
   <nav>
     <ul>
+      <li><a href="category.html">Home</a></li>
       <li><a href="category_tvs.html">TVs</a></li>
       <li><a href="category_acessories.html">Acessórios</a></li>
     </ul>
@@ -23,50 +24,54 @@
 
   <main>
     <section>
-      <h2>Produtos em Promoção</h2>
+      <h2>Categoria de Produtos</h2>
+      <h3>TVs</h3>
 
-      <ul class="lista-produtos">
-        <li class="produto">
-          <figure>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_706706-MLB88533445100_072025-F.webp"
-                 alt="Smart TV AOC 40 polegadas modelo Roku com tela LED">
-            <figcaption>Smart TV 40" Full HD Roku</figcaption>
-          </figure>
-
-          <h3>Modelo: AOC</h3>
-          <p><strong>De:</strong> R$ 1.899,90</p>
-          <p><strong>Por:</strong> R$ 1.388,32 à vista</p>
-          <p><strong>10x:</strong> R$158,78</p>
-
-          <a href="https://www.mercadolivre.com.br/" class="botao">COMPRAR AGORA</a>
-          <p class="promocao">PROMOÇÃO VÁLIDA ATÉ 30/03/2026</p>
-        </li>
-
-        <li class="produto">
-          <figure>
-            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_944494-MLA99450746674_112025-F.webp"
-                 alt="Smart TV Samsung 50 polegadas preta com resolução 4K">
-            <figcaption>Smart TV 50 polegadas 4K</figcaption>
-          </figure>
-
-          <h3>Modelo: Samsung</h3>
-          <p><strong>De:</strong> R$ 2.699,00</p>
-          <p><strong>Por:</strong> R$ 2.564,05 à vista</p>
-          <p><strong>10x:</strong> R$269,90</p>
-
-          <a href="https://www.mercadolivre.com.br/" class="botao">COMPRAR AGORA</a>
-          <p class="promocao">PROMOÇÃO VÁLIDA ATÉ 30/03/2026</p>
-        </li>
-      </ul>
+      <!-- Exercício 4: Tabela de TVs -->
+      <table class="tabela-tvs">
+        <caption>Lista de TVs disponíveis com preços e parcelamento</caption>
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Imagem</th>
+            <th>Preço</th>
+            <th>Parcelamento</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Samsung</td>
+            <td>
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_2X_944494-MLA99450746674_112025-F.webp"
+                alt="Smart TV Samsung 50 polegadas 4K">
+            </td>
+            <td>R$ 2.000,00</td>
+            <td>R$ 200,00 em 10x</td>
+            <td><a href="#">Ver mais sobre TVs Samsung</a></td>
+          </tr>
+          <tr>
+            <td>LG</td>
+            <td>
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_2X_706706-MLB88533445100_072025-F.webp"
+                alt="Smart TV LG com tecnologia QNED">
+            </td>
+            <td>R$ 5.000,00</td>
+            <td>R$ 500,00 em 10x</td>
+            <td><a href="#">Ver mais sobre TVs LG</a></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
-    <!-- Exercício 3: Formulário de Solicitação -->
+    <!-- Formulário de solicitação (mesmo do category.html) -->
     <section class="products-form">
       <form id="tv-request-form">
         <fieldset>
           <legend>Solicitação de Modelo de TV</legend>
 
-          <!-- ct 2: input com classe input-model ligado ao datalist -->
           <label for="modelo">Modelo de TV desejado:</label>
           <input
             class="input-model"
@@ -77,13 +82,11 @@
             required
           >
           <datalist id="modelos-tv">
-            <option value="AOC">
             <option value="Samsung">
+            <option value="LG">
           </datalist>
 
-          <!-- ct 1: dois blocos .col lado a lado -->
           <div class="col">
-            <!-- Nome -->
             <label for="nome">Nome:</label>
             <input
               type="text"
@@ -94,7 +97,6 @@
               required
             >
 
-            <!-- Email -->
             <label for="email">E-mail:</label>
             <input
               type="email"
@@ -107,7 +109,6 @@
           </div>
 
           <div class="col">
-            <!-- ct 2: botões dentro de menu -->
             <menu>
               <button type="reset">Limpar formulário</button>
               <button type="submit">Enviar solicitação</button>
@@ -119,8 +120,11 @@
     </section>
 
     <section>
-      <h2>Perguntas Frequentes (FAQ)</h2>
-      <p>Dúvidas sobre entregas ou garantias? Entre em contato conosco.</p>
+      <h2>Principais dúvidas</h2>
+      <details>
+        <summary>Como solicitar um modelo?</summary>
+        <p>Preencha o formulário acima com seu nome, e-mail e o modelo desejado.</p>
+      </details>
     </section>
   </main>
 
